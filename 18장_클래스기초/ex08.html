@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>함수방식 클래스로 싱글 탭메뉴 생성하기</title>
+    <title>함수방식 클래스로 다중 탭메뉴 생성하기</title>
     <style>
         .tab-menu {
             list-style: none;
@@ -54,6 +54,10 @@
             tabMenu1.init("#tabMenu1");
             tabMenu1.initEvent();
 
+            // 새로운 인스턴스를 만들어서 다중 탭메뉴를 구성함.
+            var tabMenu2 = new TabMenu();
+            tabMenu2.init("#tabMenu2");
+            tabMenu2.initEvent();
         });
 
         // TabMenu 클래스 설계
@@ -95,6 +99,15 @@
 <body>
     <p>첫 번째 탭메뉴</p>
     <ul class="tab-menu" id="tabMenu1">
+        <li class="menuitem1">google</li>
+        <li class="menuitem2">facebook</li>
+        <li class="menuitem3">pinterest</li>
+        <li class="menuitem4">twitter</li>
+        <li class="menuitem5">airbnb</li>
+        <li class="menuitem6">path</li>
+    </ul>
+    <p>두 번째 탭메뉴</p>
+    <ul class="tab-menu" id="tabMenu2">
         <li class="menuitem1">google</li>
         <li class="menuitem2">facebook</li>
         <li class="menuitem3">pinterest</li>

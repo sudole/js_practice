@@ -30,7 +30,8 @@
         // person의 멤버메서드 호출
         person1.displayPerson();
         // 아래와 같이 인스턴스를 하나를 더 만들었다. 하지만 모든 인스턴스의 저장공간은
-        // 서로 독립적이다.
+        // 서로 독립적이다. 단, 프로토타입으로 만들어진 메서드는 모든 인스턴스의 공유가
+        // 되어서 사용되어진다는 것을 잊지말자.
         var person2 = new Person();
         person2.displayPerson();
     </script>
