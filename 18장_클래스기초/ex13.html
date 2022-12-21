@@ -24,15 +24,19 @@
             // 인스턴스를 생성
             let my99dan = new My99DAN();
 
-            $("#3dan").click(function () {
-                my99dan.print3dan();
-            });
-            $("#6dan").click(function () {
-                my99dan.print6dan();
-            });
-            $("#9dan").click(function () {
-                my99dan.print9dan();
-            });
+            let dan = prompt("출력을 원하는 단을 입력하세요.");
+            my99dan.print99dan(dan);
+
+            // 버튼 이벤트 등록하는 코드
+            // $("#3dan").click(function () {
+            //     my99dan.print3dan();
+            // });
+            // $("#6dan").click(function () {
+            //     my99dan.print6dan();
+            // });
+            // $("#9dan").click(function () {
+            //     my99dan.print9dan();
+            // });
             $("#clear").click(function () {
                 my99dan.clear();
             });
@@ -51,17 +55,17 @@
             this.$output.html(str);
         }
         // 3단 출력
-        My99DAN.prototype.print3dan = function () {
-            this.print99dan(3);
-        }
+        // My99DAN.prototype.print3dan = function () {
+        //     this.print99dan(3);
+        // }
         // 6단 출력
-        My99DAN.prototype.print6dan = function () {
-            this.print99dan(6);
-        }
+        // My99DAN.prototype.print6dan = function () {
+        //     this.print99dan(6);
+        // }
         // 9단 출력
-        My99DAN.prototype.print9dan = function () {
-            this.print99dan(9);
-        }
+        // My99DAN.prototype.print9dan = function () {
+        //     this.print99dan(9);
+        // }
         // 출력정보 지우기
         My99DAN.prototype.clear = function () {
             this.$output.html("");
@@ -70,9 +74,9 @@
 </head>
 <body>
     <div>
-        <button id="3dan">3단출력</button>
-        <button id="6dan">6단출력</button>
-        <button id="9dan">9단출력</button>
+<!--        <button id="3dan">3단출력</button>-->
+<!--        <button id="6dan">6단출력</button>-->
+<!--        <button id="9dan">9단출력</button>-->
         <button id="clear">지우기</button>
     </div>
     <div id="output">
