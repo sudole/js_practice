@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>프로퍼티와 메서드</title>
+</head>
+<body>
+    <script>
+        function TabMenu() {
+
+        }
+        // 탭메뉴 정보 추가(클래스 프로퍼티와 메서드)
+        TabMenu.version = "1.0";
+        TabMenu.getInfo = function () {
+            var info = {
+                developer: "임수진",
+                email: "AA@AA.com",
+                desc: "탭 메뉴를 구현한 클래스입니다."
+            }
+            return info;
+        }
+
+        console.log(TabMenu.getInfo());
+        console.log(Math.max(10, 20));
+    </script>
+</body>
+</html>
