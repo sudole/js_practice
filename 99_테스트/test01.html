@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        arr = new Array();
+        x = 9;
+        y = 3;
+        arr.push({'x':x,'y':y});
+    </script>
+</head>
+<body>
+<script>
+    console.log(arr);
+    // document.write(arr.indexOf({'x':9,'y':3}));
+    document.write(arr.findIndex(i=> i.x == 9 && i.y == 3));
+</script>
+</body>
+</html>

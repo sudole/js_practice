@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        arr = new Array();
+        x = 9;
+        y = 3;
+        arr.push({'x':x,'y':y});
+    </script>
+</head>
+<body>
+<script>
+    function sum(arr, n) {
+        console.log(n, n === 0 ? 0 :arr[n-1])
+        if(n <= 0) {
+            return 0;
+        } else {
+            return sum(arr, n - 1) + arr[n - 1];
+        }
+    }
+
+    console.log(`result: ${sum([2, 3, 4, 5], 3)}`)
+</script>
+</body>
+</html>
